@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* font-family: 'Alata', sans-serif; */
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+
+
+body{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+main{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-container{
+    width: 1440px;
+    height: 648px;
+    background-image: url(../images/desktop/image-hero.jpg);
+}
+
+main .main-container header{
+    margin: 0 auto;
+    width: 1115px;
+    height: 105px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.menu-img{
+    display: none;
+}
+main .main-container header h3{
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 70px;
+}
+
+
+main .main-container header nav{
+    display: flex;
+    align-items: baseline;
+}
+main .main-container header nav a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: var(--white);
+    font-family: 'Alata';
+    margin-right: 32px;
+    padding-bottom: 15px;
+}
+
+main .main-container header nav a span{
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+    margin-top: 4px;
+    background-color: #fff;
+}
+
+main .main-container header nav a:hover > span{ 
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.container-text{
+    margin: 0 auto;
+    width: 1115px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+}
+
+.container-text h1{
+    padding: 34px 99px 45px 45px;
+    border: 1px solid #fff;
+    color: var(--white);
+    width: 520px;
+    font-size: 51px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* container leader */
+
+.container-leader{
+    margin: 0 auto;
+    width: 1115px;
+    height: 830px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.text-leader{
+    width: 540px;
+    height: 318px;
+    background-color: var(--white);
+    position: absolute;
+    left: 52%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-leader h2{
+    font-size: 37px;
+    width: 385px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    color: var(--Black);
+    text-transform: uppercase;
+    margin-left: 95px;
+    margin-top: 100px;
+}
+
+.text-leader p{
+    font-family: 'Alata';
+    width: 447px;
+    margin-top: 50px;
+    font-size: 15px;
+    margin-left: 95px;
+    line-height: 25px;
+    color: var(--Dark-Gray);
+}
+
+/* container our-creation */
+
+.our-creation-container{
+    margin: 0 auto;
+    width: 1115px;
+    height: 1252px;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-creation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 88px;
+}
+
+.our-creation h2{
+    font-size: 49px;
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.our-creation h4{
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 16px 45px 13px 39px;
+    border: var(--Very-Dark-Gray) 1px solid;
+    color: var(--Black);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1115px;
+    display: grid;
+    grid-template-areas: 
+    '1s 2s 3s 4s'
+    '5s 6s 7s 8s' ;
+    margin-bottom: 180px;
+}
+
+.wrapper .container-image{
+    width: 257px;
+    height: 450px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrapper .container-image p{
+    font-family: 'Josefin Sans';
+    width: 130px;
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 40px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.container-image:hover > img{
+    filter: brightness(115%);
+}
+
+
+
+.image-back{
+    position: absolute;
+    z-index: 4;
+}
+
+.back-image{
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    filter: brightness(30%);
+}
+
+
+
+.text-image{
+    z-index: 10;
+}
+
+.four p{
+    width: 90px !important; 
+ }
+
+.one{
+    grid-area: '1s';
+    position: relative;
+}
+
+.two{
+    grid-area: '2s';
+    position: relative;
+}
+
+.tree{
+    grid-area: '3s';
+    position: relative;
+}
+
+.four{
+    grid-area: '4s';
+    position: relative;
+}
+
+.five{
+    grid-area: '5s';
+    position: relative;
+}
+
+.six{
+    grid-area: '6s';
+    position: relative;
+}
+
+
+.seven{
+    grid-area: '7s';
+    position: relative;
+}
+
+.eight{
+    grid-area: '8s';
+    position: relative;
+}
+
+
+/* footer */
+footer{
+    width: 1440px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Black);
+}
+
+.container-top{
+    margin: 0 auto;
+    width: 1115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.container-top .text h3{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container-top .image img{
+    margin-right: 10px;
+}
+
+.container-top .image img:nth-child(4){
+    margin-right: 0px;
+}
+
+
+.container-bottom{
+    margin: 0 auto;
+    width: 1115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-bottom nav a{
+    font-size: 13px;
+    color: var(--white);
+    font-family: 'Alata';
+    margin-right: 32px;
+}
+
+.container-bottom h4{
+    color: var(--Dark-Gray);
+    font-family: 'Alata', sans-serif;
+}
+
+.attribution{
+    width: 1440px;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    background-color: var(--Black);
+}
+
+.attribution div{
+    margin: 0 auto;
+    width: 1115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+}
+
+.attribution div a{
+    margin-left: 5px;
+}
